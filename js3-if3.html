@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        프롬프트 창으로 점수를 입력 받아서 
+        100~90 A 학점
+        89~80 B 학점
+        79~70 C 학점
+        69~60 D 학점
+        나머지는 F 학점
+     -->
+    <script>
+        let score = prompt(`당신의 점수를 입력하세요`);
+
+        if (score >= 90 && score <= 100) {
+            console.log(`A 학점`)
+            // 100이하 90이상 인 점수일 경우 A학점
+
+        } else if (score >= 80 && score < 90) {
+            console.log(`B 학점`)
+            // 90미만 80이상 인 점수일 경우 B학점
+
+        } else if (score >= 70 && score < 80) {
+            console.log(`C 학점`)
+            // 80미만 70이상 인 점수일 경우 C학점
+
+        } else if (score >= 60 && score < 70) {
+            console.log(`D 학점`)
+            // 70미만 60이상 인 점수일 경우 D학점
+
+        } else if (score > 0 && score < 60) {
+            console.log(`F 학점`)
+            // 60미만 0초과 인 점수일 경우 F학점
+
+        } else {
+            console.log(`잘못된 입력`)
+            // 위에 해당되지 않는 값은 모두 잘못된 입력으로 출력
+        }
+    </script>
+</body>
+
+</html>

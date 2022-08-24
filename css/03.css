@@ -1,0 +1,34 @@
+body {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: "Titillium+Web";
+  font-weight: 400;
+  color: #987;
+  font-size: 80px;
+  color: #456;
+}
+
+h2 {
+  font-family: "Titillium+Web";
+  font-weight: 400;
+  color: #987;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: "Titillium+Web";
+  font-weight: 400;
+  color: #987;
+  font-size: 40px;
+}
+
+p {
+  font-family: "Titillium+Web";
+  font-weight: 400;
+  color: #987;
+  font-size: 20px;
+}
+/*# sourceMappingURL=03.css.map */

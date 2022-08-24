@@ -1,0 +1,80 @@
+@use '_core.scss';
+
+$main-color:#980606;
+$sub-color: #456;
+$basic-g-color1: #999;
+$basic-g-color2: #789;
+$basic-g-color3: #123456;
+$basic-g-color4: #456789;
+$basic-w-color: #3456;
+$size-lg: 500px;
+$size-sm: 150px;
+$size-xs: 50px;
+$mt50: 50px;
+$mt10: 10px;
+
+@mixin box-radius($radius){
+    width: 100px;
+    height: 100px;
+    background-color: deepskyblue;
+    border: 5px solid gold;
+    border-radius: $radius;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    margin: 10px;
+}
+.box-1{@include box-radius(50%)}
+
+
+@mixin btn-basic($bgcolor){
+    font-size: 50px;
+    padding: 20px 40px;
+    color: #fff;
+    background-color: $bgcolor;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn1{
+    @include btn-basic(#298);
+}
+.btn2{
+    @include btn-basic(#298);
+}
+.btn3{
+    @include btn-basic(#298);
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    border: 5px solid $basic-g-color4;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    @extend .box
+}
+.box2{
+    @extend .box
+}
+.box4{
+    width: $size-lg;
+    height: $size-sm;
+    background-color: $basic-g-color2;
+    p{
+        color: $main-color;
+        font-size: $mt10;
+    }
+    a{
+        &:hover{color: $basic-g-color3;}
+        span{
+            color: $basic-g-color4;
+            font-size: $mt50;
+        }
+    }
+}
+
